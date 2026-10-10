@@ -50,3 +50,7 @@ See the README inside each zip in `3-FOR-YOUR-PROGRAMMER (optional)/`.
 - Paid promotions are always marked as ads.
 - No buy/sell signals or financial advice.
 - Bot tokens never go in this repository. Use `.env` files on the server.
+
+## Support this project
+
+Like the crew? You can support further development through [GitHub Sponsors](https://github.com/sponsors/sylvievvv). 💛
