@@ -1,0 +1,89 @@
+TELEGRAM GROWTH CREW FOR CHATGPT - READ ME FIRST
+================================================
+
+What this is
+------------
+Your own GPT in ChatGPT that works as a small crew to grow your crypto
+Telegram channel:
+
+  Scout        finds crypto channels that sell ads, with their real numbers
+  Checker      spots fake subscribers and bought views before you pay
+  Negotiator   writes personal messages to channel admins (you send them)
+  Tracker      shows which ads brought subscribers, and what each one cost
+  Strategist   growth ideas from your own channel stats
+  Broadcaster  crypto posts (scam alerts, explainers, recaps) and your
+               "Welcome %username%!" message
+
+You need ChatGPT Plus (or higher) to make your own GPT.
+No API keys, no server, no programmer needed.
+
+
+Make the GPT (one time, about 5 minutes)
+----------------------------------------
+Do this on a computer, at chatgpt.com.
+
+1. In the left menu, click "GPTs", then "+ Create" (top right).
+2. Click the "Configure" tab. Do not use the "Create" chat tab.
+3. Fill in:
+   Name:         Telegram Growth Crew
+   Description:  Grows my crypto Telegram channel: finds ad channels,
+                 checks for fakes, drafts messages, tracks ads.
+   Instructions: open 1-INSTRUCTIONS.txt, copy ALL the text, and paste it.
+4. Conversation starters (add these 4):
+   start
+   Find 15 Spanish DeFi channels to advertise in
+   Write this week's scam alert
+   Write a welcome message: Welcome %username%!
+5. Knowledge: click "Upload files" and choose ALL 7 files in the folder
+   2-KNOWLEDGE-FILES:
+     crew.py
+     agent-world-template.html
+     crew-guide.md
+     fraud-rules.md
+     messages.md
+     ad-tracking.md
+     crypto-content.md
+6. Capabilities: turn ON
+     - Web Search
+     - Code Interpreter & Data Analysis   (this one is required!)
+   Image generation can be off.
+7. Click "Create" (top right). Choose "Only me", then "Save".
+
+
+First use
+---------
+Open your new GPT and type:   start
+
+It asks three short questions: your channel, where you want to advertise,
+and your budget. Answer in one message. It then finds your first channels
+and gives you two files to download:
+
+  growth-crew.xlsx   your lists: setup, channels, ads, drafts, activity
+  agent-world.html   your crew as 3D ninjas, replaying what they just did,
+                     with tabs for leads, ads, inbox and report.
+                     Download it and open it in your browser.
+
+KEEP growth-crew.xlsx. Next time, attach it to the chat (paperclip) and just
+say what you want. That file is the crew's memory.
+
+
+If something goes wrong
+-----------------------
+- "crew.py missing": attach crew.py and agent-world-template.html (from the
+  folder 2-KNOWLEDGE-FILES) to the chat once, and say "try again".
+- It doesn't find channels: make sure Web Search is on in the GPT settings.
+- No download link: say "give me the download links for both files".
+
+
+Safety
+------
+The crew never sends messages or pays anyone. It only prepares; you decide
+and send. No fake accounts, no bought views, no buy/sell signals, and paid
+posts are always marked as ads.
+
+
+Want a bot later? (optional)
+----------------------------
+The fully automatic Telegram bot (option C) works no matter which chat app
+you use. It needs a programmer and a Claude API key.
+Give your programmer: option-C-agentworld-backend.zip

@@ -1,94 +1,52 @@
-TELEGRAM GROWTH CREW - READ ME FIRST
-====================================
+# Telegram Growth Crew
 
-What this is
-------------
-An add-on ("skill") for your own Claude. It turns Claude into a small crew
-that helps grow your crypto Telegram channel:
+AI growth crew for a crypto Telegram channel. It finds channels to advertise in, checks them for fake subscribers, drafts messages to their admins, tracks cost per subscriber and writes crypto posts and a welcome message. It runs as a Claude skill and comes with a 3D **Agent World** dashboard. Nothing is posted or sent without the owner's approval.
 
-  Scout       finds crypto channels that sell ads, with their real numbers
-  Checker     spots fake subscribers and bought views before you pay
-  Negotiator  writes personal messages to channel admins (you send them)
-  Tracker     shows which ads brought subscribers, and what each one cost
-  Strategist  gives growth ideas based on your own channel stats
-  Broadcaster writes crypto posts for your channel: scam alerts,
-              explainers and weekly recaps (you approve before posting)
+## What's in here
 
-No API keys, no server, no programmer needed. It runs inside your Claude.
+| File / folder | For whom | What it is |
+|---|---|---|
+| `START-HERE.txt` | Channel owner | Read this first: install in 2 minutes, then type **start** |
+| `2-GUIDE.html` | Channel owner | Full guide (open it in a browser) |
+| `1-UPLOAD-TO-CLAUDE/telegram-growth-crew.zip` | Channel owner | The skill: upload it in Claude → Settings → Capabilities → Skills |
+| `EXAMPLE-agent-world (test data).html` | Everyone | What the dashboard looks like, with test data |
+| `3-FOR-YOUR-PROGRAMMER (optional)/` | Programmer | Option B (Claude + bot connector) and Option C (fully automatic bot) |
+| `chatgpt/` | Channel owner | ChatGPT version (a custom GPT). Read `START-HERE-CHATGPT.txt` |
+| `source/` | Programmer | Unzipped source: dashboard, skill, connector (B) and backend (C) |
 
+## Quick start (owner)
 
-Install (one time, about 2 minutes)
------------------------------------
-You need a Claude Pro or Max plan.
+1. Works on the free Claude plan. Pro or Max gives more room for big searches.
+2. In Settings → Capabilities, turn on **Code execution and file creation**.
+3. Under Customize → Skills, click **Upload skill** and choose `1-UPLOAD-TO-CLAUDE/telegram-growth-crew.zip`.
+4. Turn on web search in the chat.
+5. Open a new chat and type `start`.
 
-1. Open claude.ai (or the Claude app on a computer).
-2. Go to Settings > Capabilities.
-   - Turn ON "Code execution and file creation".
-3. In the same page, find "Skills" and click "Upload skill".
-   - Choose the file in the folder 1-UPLOAD-TO-CLAUDE:
-     telegram-growth-crew.zip (do not unzip that one).
-   - Make sure the switch next to "telegram-growth-crew" is ON.
-4. In a chat, make sure web search is turned on (the tools/search toggle
-   next to the message box).
+## The crew
 
-That's it.
+| Crew member | What it does |
+|---|---|
+| Scout | Finds crypto channels that sell ads, with their real numbers |
+| Checker | Gives each channel a fraud score: clean, check by hand, or risky |
+| Negotiator | Writes personal price requests and swap proposals. The owner sends them himself. |
+| Tracker | Works out the cost per new subscriber for each ad |
+| Strategist | Turns the owner's channel stats into growth experiments |
+| Broadcaster | Writes posts (scam alerts, explainers, weekly recaps) and the "Welcome %username%!" message |
 
+## Connecting the Telegram bot (optional)
 
-First use
----------
-Open a new chat and type:   start
+| Option | What it adds | Needs |
+|---|---|---|
+| A | Everything above, inside Claude | Nothing extra |
+| B | Claude posts through the owner's existing bot after he approves, makes an invite link per ad, counts joins and welcomes new members | Small server |
+| C | A separate Telegram bot that sends drafts with Approve / Edit / Reject buttons | Server + Claude API key + TGStat API |
 
-Claude asks you three short questions: your channel, where you want to
-advertise, and your budget. Answer in one message. Claude then saves your
-answers, finds your first channels right away, and gives you two files:
+See the README inside each zip in `3-FOR-YOUR-PROGRAMMER (optional)/`.
 
-  growth-crew.xlsx   your lists: setup, channels, ads, drafts, activity
-  agent-world.html   your crew as 3D ninjas in a neon street, replaying what
-                     they just did, with tabs for your leads, ads, inbox and
-                     daily report. Open it in your browser.
+## House rules
 
-Keep that file. Next time, attach growth-crew.xlsx to the chat and just say
-what you want. Claude remembers everything through that file: your setup,
-all channels found, and all ads you booked.
-
-Tip: make a Claude Project called "Telegram Growth" and add growth-crew.xlsx
-to the project files. Then you never have to attach it again.
-
-
-Things you can ask
-------------------
-  Find 15 Spanish DeFi channels to advertise in
-  Check @channelname for fake subscribers
-  Write price requests for the 5 best clean channels
-  Ad on @channel cost $60, 140 people joined via my link
-  (send a screenshot of your channel statistics) -> growth ideas
-  Write this week's scam alert
-  Explain staking in 60 seconds
-  Weekly crypto recap
-  Write a welcome message: Welcome %username%!
-  menu
-
-
-Connect your Telegram bot? (optional)
--------------------------------------
-Everything above works WITHOUT connecting your bot (option A).
-Your programmer can add more later. Pick one:
-
-  B  Claude + bot connector: Claude can post approved messages through
-     your existing bot, make an invite link per ad, count the joins, and
-     send "Welcome %username%!" to everyone who joins through your ad links.
-     Give your programmer: option-B-telegram-connector.zip
-  C  Fully automatic bot in Telegram that sends you drafts with
-     Approve / Edit / Reject buttons (needs a Claude API key).
-     Give your programmer: option-C-agentworld-backend.zip
-
-Comparison table: GUIDE.html, section 8. Advice: start with A.
-
-
-Safety
-------
-Claude never sends messages or pays anyone. It only prepares; you decide
-and send. No fake accounts, no bought views, no buy/sell signals, and paid
-posts are always marked as ads.
-
-More explanation: open 2-GUIDE.html in your browser.
+- Nothing is posted or sent without the owner's OK.
+- No fake accounts, bought engagement or mass DMs.
+- Paid promotions are always marked as ads.
+- No buy/sell signals or financial advice.
+- Bot tokens never go in this repository. Use `.env` files on the server.

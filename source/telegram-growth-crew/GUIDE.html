@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telegram Growth Crew · Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070d10;--panel:#0e181c;--panel2:#132227;--ink:#e6f1f2;--muted:#9bb6ba;--line:#1f3036;--teal:#3fe0d0;--pink:#ff4fb8;--amber:#ffb238;--green:#49d17a;--red:#ff5a6a;--blue:#3f8cff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+h1,h2,h3{font-family:"Chakra Petch","Trebuchet MS",sans-serif;line-height:1.2;margin:0}
+h1{font-size:2.4rem;text-shadow:0 0 22px rgba(63,224,208,.45)}
+h2{font-size:1.5rem;margin:44px 0 12px;display:flex;gap:10px;align-items:center}
+h2 .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--teal);color:#04110f;font-size:1.05rem}
+h3{font-size:1.1rem;margin:0 0 6px}
+p{margin:0 0 12px} .lead{font-size:1.15rem;color:var(--muted);margin-top:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.crew{border-top:3px solid var(--c)}
+.crew b{color:var(--c)}
+ol.steps{margin:0;padding-left:22px;display:grid;gap:10px}
+ol.steps li::marker{color:var(--teal);font-weight:700}
+code,kbd{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.say{display:block;background:#152530;border-radius:14px 14px 14px 4px;padding:10px 14px;margin:6px 0;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.pill{display:inline-block;border-radius:999px;padding:1px 10px;font-weight:700;font-size:.85rem}
+.g{background:#0f2a1a;color:var(--green)} .y{background:#2b1f0a;color:var(--amber)} .r{background:#2c0f15;color:var(--red)}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.flow span{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-weight:600}
+.flow i{color:var(--muted);font-style:normal}
+.note{border-left:0;background:#0f2026;border:1px solid #23444b;border-radius:12px;padding:12px 14px;color:#cfe6e8}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:#cfe0e2}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Telegram Growth Crew</h1>
+<p class="lead">Your own Claude, working as a small crew that finds channels to advertise in, checks them for fakes, writes to their admins, and shows which ads really brought subscribers.</p>
+
+<h2><span class="n">1</span>Meet the crew</h2>
+<div class="grid">
+  <div class="card crew" style="--c:var(--teal)"><h3><b>Scout</b></h3><p>Finds crypto Telegram channels that fit you and collects their real numbers: subscribers, views per post, growth, and the admin contact.</p></div>
+  <div class="card crew" style="--c:var(--blue)"><h3><b>Checker</b></h3><p>Gives every channel a fraud score, so you don't pay for fake subscribers or bought views.</p></div>
+  <div class="card crew" style="--c:var(--pink)"><h3><b>Negotiator</b></h3><p>Writes one personal message per admin: asking prices, making counter-offers or proposing free swaps. <b>You</b> send it.</p></div>
+  <div class="card crew" style="--c:var(--amber)"><h3><b>Tracker</b></h3><p>Works out what each new subscriber cost, per ad, and tells you which channels to book again.</p></div>
+  <div class="card crew" style="--c:var(--green)"><h3><b>Strategist</b></h3><p>Looks at your own channel stats and suggests 3 concrete experiments to grow faster.</p></div>
+  <div class="card crew" style="--c:var(--pink)"><h3><b>Broadcaster</b></h3><p>Writes crypto posts for your own channel: a weekly scam alert, 60-second explainers and a facts-only weekly recap. It looks up this week's news first. Nothing goes out until you approve.</p></div>
+</div>
+
+<h2><span class="n">2</span>Install (one time)</h2>
+<div class="card">
+<ol class="steps">
+  <li>Open <b>claude.ai</b> or the Claude app on a computer. Works on the <b>free</b> plan; Pro or Max gives more room for big searches.</li>
+  <li>Go to <b>Settings → Capabilities</b> and turn on <b>Code execution and file creation</b>.</li>
+  <li>Find <b>Skills</b> (under <b>Customize</b>, or on the same Settings page), click <b>Upload skill</b> and choose <code>telegram-growth-crew.zip</code>. Don't unzip it first.</li>
+  <li>Check that the switch next to <b>telegram-growth-crew</b> is on.</li>
+  <li>In a chat, make sure <b>web search</b> is on. It's in the tools menu next to the message box.</li>
+</ol>
+</div>
+
+<h2><span class="n">3</span>Your first 10 minutes</h2>
+<div class="card">
+<p>Open a new chat and type:</p>
+<span class="say">start</span>
+<p>Claude asks three questions. Answer them in one message, for example:</p>
+<span class="say">@mychannel, crypto education, English, 18k subs. Ads in Spanish and English channels, DeFi and news. $30–120 per post, $1000 a month.</span>
+<p>Claude saves this, immediately finds your first channels, and gives you two files. The first is <b>agent-world.html</b>: open it to see your crew as 3D ninjas walking to their stations and playing back what they just did, with tabs for your leads, ad results, approval inbox and daily report. The second is <b>growth-crew.xlsx</b>, your lists. Its sheets:</p>
+<ul>
+  <li><b>Start here:</b> how to use the file</li>
+  <li><b>My setup:</b> your answers</li>
+  <li><b>Leads:</b> every channel found, green / yellow / red</li>
+  <li><b>Ad log:</b> every ad, with cost per new subscriber</li>
+  <li><b>Drafts, Activity, Ideas:</b> messages waiting for you, what the crew did, and growth ideas</li>
+</ul>
+<p class="note"><b>Keep this file.</b> Next time, attach <b>growth-crew.xlsx</b> to the chat and just say what you want. Claude remembers everything through it. Easiest option: make a Claude Project called "Telegram Growth" and put the file in the project, so it's always there.</p>
+</div>
+
+<h2><span class="n">4</span>The weekly routine</h2>
+<div class="card">
+<div class="flow"><span>Find channels</span><i>→</i><span>Check for fakes</span><i>→</i><span>Write to admins</span><i>→</i><span>Book 1–2 ads with invite links</span><i>→</i><span>Track joins after a week</span><i>→</i><span>Rebook the winners</span></div>
+<p style="margin-top:14px">What to type:</p>
+<span class="say">Find 15 Spanish DeFi channels to advertise in</span>
+<span class="say">Write price requests for the 5 best clean channels</span>
+<span class="say">I sent them</span>
+<span class="say">@criptonoticias wants $40 for 1 post, is that fair?</span>
+<span class="say">Ad on @criptonoticias cost $40, 95 people joined via my link</span>
+<span class="say">menu</span>
+<p style="margin-top:14px">Crypto posts for your own channel:</p>
+<span class="say">Write this week's scam alert</span>
+<span class="say">Explain staking in 60 seconds</span>
+<span class="say">Weekly crypto recap</span>
+<span class="say">Plan my posts for next week</span>
+<p style="margin-top:10px">The crew knows crypto (DeFi, wallets, Layer 2, stablecoins, scams) and searches the web for this week's news. It never gives buy/sell tips or price predictions.</p>
+</div>
+
+<h2><span class="n">5</span>How the fraud check works</h2>
+<div class="card">
+<p>The most important number is <b>reach</b>: how many of a channel's subscribers actually see a post. Healthy crypto channels reach 8–30%. A channel with 100,000 subscribers and 100 views per post is fake or dead. Paying it is money thrown away.</p>
+<table>
+<tr><th>Score</th><th>Verdict</th><th>What to do</th></tr>
+<tr><td>0–29</td><td><span class="pill g">clean</span></td><td>Good to contact</td></tr>
+<tr><td>30–59</td><td><span class="pill y">check by hand</span></td><td>Scroll the channel's last 20 posts before paying</td></tr>
+<tr><td>60–100</td><td><span class="pill r">risky</span></td><td>Don't buy</td></tr>
+</table>
+<p style="margin-top:12px">The score also looks at sudden subscriber jumps, big drops, views with no reactions, and signal/VIP channels. Claude also opens each channel's public Telegram page to check that the recent views are real.</p>
+</div>
+
+<h2><span class="n">6</span>What's a fair price?</h2>
+<div class="card">
+<p>Every channel gets a <b>fair price</b> range for one post, based on its real views. Crypto ads usually cost <b>$8–20 per 1,000 views</b>. A channel with 3,000 views per post is worth about $24–60 per post. If an admin asks much more, Claude writes a polite counter-offer.</p>
+<p>Judge ads by <b>cost per new subscriber</b>, not by price per post. A $20 ad that brings 95 people ($0.21 each) beats a $300 ad that brings 410 ($0.73 each).</p>
+</div>
+
+<h2><span class="n">7</span>Give every ad its own invite link</h2>
+<div class="card">
+<ol class="steps">
+  <li>In Telegram, open your channel → <b>Manage / Edit</b> → <b>Invite links</b> → <b>Create a new link</b>.</li>
+  <li>Name it after the channel that will post your ad, for example <code>ad_criptonoticias_oct</code>.</li>
+  <li>Send that link to the admin. Only this link goes in their post.</li>
+  <li>A week later, open Invite links again. Each link shows <b>how many people joined</b>. Tell Claude the cost and the number of joins.</li>
+</ol>
+</div>
+
+<h2><span class="n">8</span>Connect your Telegram bot (optional): choose A, B or C</h2>
+<div class="card">
+<p>The crew works without connecting anything (option A). Your existing bot keeps posting as it does now. If you want Claude to also work with your bots, your programmer can set up B or C. You choose; you can always start with A and upgrade later.</p>
+<div style="overflow-x:auto"><table style="min-width:620px">
+<tr><th></th><th>A · Claude only</th><th>B · Claude + bot connector</th><th>C · Fully automatic bot</th></tr>
+<tr><td><b>What it does</b></td><td>Everything in this guide. You post, make invite links and type join numbers yourself.</td><td>Like A, plus Claude can post approved messages through <b>your existing bot</b>, make ad links, and count joins per ad.</td><td>A separate bot works by itself and sends you drafts in Telegram with Approve / Edit / Reject buttons.</td></tr>
+<tr><td><b>Where you use it</b></td><td>Your Claude</td><td>Your Claude</td><td>Telegram</td></tr>
+<tr><td><b>Welcome message</b> ("Welcome %username%!")</td><td>Claude writes it; you paste it into a bot you already use for welcomes, or pin a welcome post</td><td>Sent automatically to everyone who joins through your ad links, and in your discussion group</td><td>Same as B, changed with /welcome in Telegram</td></tr>
+<tr><td><b>Needs a programmer</b></td><td>No</td><td>Yes, about half a day</td><td>Yes, about a day</td></tr>
+<tr><td><b>Needs a server</b></td><td>No</td><td>Yes, a small one</td><td>Yes, a small one</td></tr>
+<tr><td><b>Extra costs</b></td><td>None</td><td>Server only (~$5/month)</td><td>Server + Claude API (pay per use) + TGStat API</td></tr>
+<tr><td><b>Does it ever post or send by itself?</b></td><td>Never</td><td>Never: you say yes to every post in the chat</td><td>Never: you tap Approve for everything</td></tr>
+<tr><td><b>Files for your programmer</b></td><td>–</td><td><code>telegram-connector.zip</code></td><td><code>agentworld-backend.zip</code></td></tr>
+</table></div>
+<p style="margin-top:12px"><b>Our advice:</b> use A for 2–3 weeks. If you like it and want less copy-paste, ask your programmer for <b>B</b>.</p>
+<p class="note">Never paste your bot's token into a free Telegram tool or connector you find online. Whoever has the token can post in your channel. Only your own programmer's server should have it.</p>
+<p>With B connected, open a chat, click <b>+ → Connectors</b>, switch on "Telegram Growth", and say things like:</p>
+<span class="say">Post the weekly poll</span>
+<span class="say">Make an invite link for the ad on @criptonoticias</span>
+<span class="say">How did my ads do?</span>
+</div>
+
+<h2><span class="n">9</span>Safety rules built in</h2>
+<div class="card">
+<ul>
+  <li>Claude never sends messages and never pays anyone. It prepares; you decide.</li>
+  <li>No mass messaging: at most 10 personal messages per run.</li>
+  <li>No fake accounts, bought views or tricks that can get your channel banned.</li>
+  <li>Paid posts are always marked as ads.</li>
+  <li>No buy/sell signals or financial advice.</li>
+</ul>
+</div>
+
+<h2><span class="n">10</span>Questions</h2>
+<details><summary>Claude says it can't find the skill or the file.</summary><p>Check that the skill switch is on in Settings → Capabilities, and that "Code execution and file creation" is on. Start a new chat and type <code>start</code>.</p></details>
+<details><summary>Claude asks my setup questions again.</summary><p>It didn't see your growth-crew.xlsx. Attach it to the chat, or put it in your Claude Project.</p></details>
+<details><summary>Some channels have no admin contact.</summary><p>Many channels only list it in a pinned post. Open the channel in Telegram and look at the pinned message or the description.</p></details>
+<details><summary>Can it post to my channel or message admins automatically?</summary><p>Messages to admins: never automatically, because that gets Telegram accounts banned; you send them yourself. Posting to your own channel: yes, with option B or C (section 8), and always only after you approve.</p></details>
+<details><summary>Can new members get "Welcome %username%!"?</summary><p>Yes. Ask Claude: <i>Write a welcome message: Welcome %username%!</i>. <b>%username%</b> becomes their @name. With option B or C, everyone who joins through your ad links gets it in a private chat, and new members of your discussion group are greeted there. One Telegram rule: no bot can message people who join a public channel straight through its @name. They see your pinned welcome post instead.</p></details>
+<details><summary>Will my existing copy/paste bot keep working?</summary><p>Yes. Option A doesn't touch it. Option B only uses it to send the posts you approve. Option C uses a separate, new bot.</p></details>
+<details><summary>Are the numbers always right?</summary><p>They come from public Telemetr pages and Telegram's own channel previews. They're a strong filter, not a guarantee. Before a big payment, scroll the channel yourself for a minute.</p></details>
+
+</div>
+</body>
+</html>
