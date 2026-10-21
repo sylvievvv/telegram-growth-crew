@@ -6,6 +6,40 @@ AI growth crew for a crypto Telegram channel. It finds channels to advertise in,
 
 <p align="center"><a href="media/demo.mp4">▶ Watch the full demo video (MP4)</a></p>
 
+## The story: built for a real client
+
+This project started as a **real client assignment**.
+
+A crypto Telegram channel owner came to me with a problem every channel owner knows. In his own words:
+
+> *"It's hard to make a channel grow. I can invest money in ads, but it's hard to find the right channels. I want AI working on ways to grow the channel: finding crypto channels to buy ads from, and talking to them."*
+
+He didn't want another bot that spams people or buys fake followers. He wanted a **team** that works for him and only acts when he says yes.
+
+So I built him one.
+
+| The problem | What the crew does about it |
+|---|---|
+| Finding channels to advertise in takes hours | The **Scout** finds them, with real numbers |
+| Many channels have fake subscribers or bought views | The **Checker** gives every channel a fraud score before you pay a cent |
+| Writing to admins one by one | The **Negotiator** drafts personal price requests and swap offers |
+| No idea which ads actually work | The **Tracker** works out the cost per new subscriber for every ad |
+| No time to make content | The **Broadcaster** writes scam alerts, explainers and the "Welcome %username%!" message |
+| Afraid of losing control | Nothing goes out without his **Approve** |
+
+**The brief:** no programmer, no servers, no API bills, and it had to feel fun to use. That's why it runs inside his own Claude, and why his crew lives in a 3D neon city where you can watch the ninjas walk to work.
+
+**Delivered:**
+- the Claude skill;
+- the 3D Agent World dashboard;
+- a step-by-step guide;
+- a ChatGPT version;
+- two optional bot integrations for his programmer.
+
+All of it is tested on real Telegram channels.
+
+> 💡 **Want a crew like this for your own niche?** E-commerce, real estate, agencies, creators: the same idea works anywhere. Reach out through [GitHub](https://github.com/sylvievvv) and let's talk.
+
 ## What's in here
 
 | File / folder | For whom | What it is |
