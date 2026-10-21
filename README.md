@@ -2,6 +2,10 @@
 
 AI growth crew for a crypto Telegram channel. It finds channels to advertise in, checks them for fake subscribers, drafts messages to their admins, tracks cost per subscriber and writes crypto posts and a welcome message. It runs as a Claude skill and comes with a 3D **Agent World** dashboard. Nothing is posted or sent without the owner's approval.
 
+<p align="center"><a href="media/demo.mp4"><img src="media/demo.gif" alt="Telegram Growth Crew demo" width="800"></a></p>
+
+<p align="center"><a href="media/demo.mp4">▶ Watch the full demo video (MP4)</a></p>
+
 ## What's in here
 
 | File / folder | For whom | What it is |
